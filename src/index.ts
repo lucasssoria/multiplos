@@ -9,11 +9,9 @@ function esMultiplo(num: number, multiplo: number) {
     return false;
   }
 }
-console.log(esMultiplo(num, multiplo));
-for (let i: number = num; i < multiplo; i++) {
-  if (esMultiplo(i, multiplo)) {
-    console.log(i + " Es multiplo de " + multiplo);
-  } else {
-    console.log(i + " No es multiplo de " + multiplo);
-  }
+
+if (esMultiplo(num, multiplo)) {
+  console.log(num + " Es multiplo de " + multiplo);
+} else {
+  console.log(num + " No es multiplo de " + multiplo);
 }
